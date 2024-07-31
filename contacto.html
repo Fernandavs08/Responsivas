@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Servicios Tecnológicos</title> 
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="funciones.js"></script>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<!--MENU-->
+	<nav class="menu">
+		<div class="hamburguesa" onclick="mostrar()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<label class="logo"> UVNE ISC6 Servicios Tecnológicos </label>
+		<ul id="desplegable">
+			<li><span class="cerrar" onclick="ocultar()"> x </span></li>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+			<li><a href="eventos.html">Eventos</a></li>
+			<li><a href="contacto.html">Contáctanos</a></li>	
+		</ul>
+		
+	</nav>
+	<!--BANNER-->
+	<header>
+		<div class="banner">
+			<div class="texto_banner">
+				<h1>CONTACTO</h1>
+			</div>
+		</div>
+	</header>
+	<!--Quienes Somos-->
+	<main>
+
+		 <section class="datos">
+            <h1 class="título">Contáctanos</h1>
+            <div class="línea"></div>
+           
+            <div class="contenedor-datos">
+                <!-- Formulario de contacto -->
+                <div class="formulario">
+                    <form action="enviar.php" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <button type="submit" class="botón">Enviar</button>
+                    </form>
+                </div>
+            </div>
+         
+        </section>
+
+        <section>
+        	 <h1 class="título">Ubicación</h1>
+            <div class="línea"></div>
+        </section>
+
+		
+		<section class="servicios">
+			<div class="contenido">
+				
+				<div class="info-contacto">
+				<h1 class="título">Plantel Santa Catarina</h1>
+				<h2 class="subtítulo">Rectoría</h2>
+                <p><strong>Dirección</strong><br>Calle Manuel Ordóñez #140, Centro<br>Santa Catarina, Nuevo León</p>
+                <p><strong>Teléfono</strong><br>81 8388 0182</p>
+                <p><strong>Correo electrónico</strong><br>contacto@uvne.edu.mx</p>
+            </div>
+
+				<div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1797.9608980240225!2d-100.462451!3d25.673887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629872cd91d1c1%3A0x9cd409f151b65241!2sUVNE!5e0!3m2!1ses!2smx!4v1720394636120!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+				
+
+		<!--Redes sociales-->
+		<footer class="redes">
+			<h3>Síguenos en:</h3>
+			<a href="https://web.facebook.com/pages/Uvne-Santa-Catarina/451833224882302" target="_tab"><i class='bx bxl-facebook-circle bx-md bx-spin-hover espacio' style='color:#ffffff'  ></i>
+			<a href="https://www.instagram.com/uvne1/?hl=es" target="_tab"><i class='bx bxl-instagram-alt bx-md bx-spin-hover espacio' style='color:#ffffff'></i>
+			<a href="https://twitter.com/uvne01?lang=es" target="_tab"><i class='bx bxl-twitter bx-md bx-spin-hover espacio'style='color:#ffffff'></i>
+			<a href="https://web.facebook.com/pages/Uvne-Santa-Catarina/451833224882302" target="_tab"><i class='bx bxl-youtube bx-md bx-spin-hover espacio'style='color:#ffffff'></i>
+			<a href="https://web.facebook.com/pages/Uvne-Santa-Catarina/451833224882302" target="_tab"><i class='bx bxl-tiktok bx-md bx-spin-hover espacio'style='color:#ffffff'></i>
+		</footer>
+	</main>
+
+</body>
+</html>
